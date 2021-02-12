@@ -1,0 +1,149 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#title { 
+	position: fixed;
+	bottom: 0vh;
+	margin-bottom: 0vh;
+	width: 100vw;
+	font-size: 3vmax;
+	color: rgb(31, 50, 222);
+	border-top: 5px solid white;
+	background-color: rgb(17, 0, 255, 0.15);
+}
+
+table {
+	margin-left: 70px;
+	margin-top: 200px;
+}
+
+input {
+    width: 200px;
+	margin-bottom: 10px;
+	margin-right: 40px;
+	background-color: rgb(17, 0, 255, 0.25);
+	color: white;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-radius: 10px;
+	padding-left: 5px;
+	font-size: 18px;
+}
+
+input:focus {
+	outline-width: 0;
+}
+
+#addBookBtn {
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 12px;
+	margin-top: 30px;
+}
+
+.desc {
+
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+
+#cardHolder {
+	display: flex;
+	flex-wrap: no-wrap;
+	width: 100%;
+	height: auto;
+}
+
+#card {
+	width: 400px;
+	height: 600px;
+	text-align: center;
+	border: solid 3px white;
+	background-color: rgb(17, 0, 255, 0.1);
+	border-radius: 20px;
+}
+
+.card2 {
+	margin-left: 15px;
+	width: 400px;
+	height: 600px;
+	text-align: center;
+	border: solid 3px white;
+	background-color: rgb(17, 0, 255, 0.15);
+	border-radius: 20px;
+}
+
+.remove {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 35px;
+	height: 35px;
+	background-image: url('trash.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+.newDesc {
+	font-size: 20px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.toggle {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 4px;
+}
+
+.list {
+	list-style-type: none;
+	margin-top: 200px;
+	margin-right: 25px;
+	text-align: center;
+}
+
+#newBookBtn {
+	margin-top: 250px;
+	background-color: rgb(12, 47, 105);
+	color: rgb(168, 201, 255);
+	font-weight: bold;
+	font-size: 30px;
+	padding: 15px;
+	border: solid 2px rgb(158, 31, 184);
+	border-radius: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+	#title {
+		font-size: 5vw;
+		background-color: black;
+	}
+	
+	#cardHolder {
+		flex-direction: column;
+	}
+	
+	#card {
+		width: 80%;
+		height: 550px;
+		margin-left: 50px;
+	}
+	
+	.card2 {
+		width: 80%;
+		height: 550px;
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+}
